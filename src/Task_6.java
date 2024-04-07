@@ -15,19 +15,15 @@ public class Task_6 {
             return num;
         }
         else{
-            int result=1;
-            for(int i=0;i<degree;i++){
-                result*=num;
-            }
-            num = result;
+            return num*numDegree(num,degree-1);
         }
         return num;
     }
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
-        int degree = scan.nextInt();
-        int result = numDegree(num,degree);
-        System.out.println(result);
-    }
-}
+            Scanner scan = new Scanner(System.in);
+            int num = scan.nextInt();
+            int degree = scan.nextInt();
+            int result = numDegree(num,degree);
+            System.out.println(result);
+        }
+   }
